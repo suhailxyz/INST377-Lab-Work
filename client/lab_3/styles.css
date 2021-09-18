@@ -7,7 +7,7 @@
   
   .menu-container {
     color: #fff;
-    background-color: #5995DA;  /* Blue */
+    background-color: #5995DA;  
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
   }
 
   .links {
-    border: 1px solid #fff;  /* For debugging */
+    border: 1px solid #fff;  
     display: flex;
     justify-content: flex-end;
     
@@ -61,7 +61,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;  /* <--- Really freaking cool! */
+    flex-direction: row;  
     align-items: center;
   }
   
@@ -99,6 +99,6 @@
 
   .footer-one,.footer-three{
     background-color: #D6E9FE;
-    background-color: #5995DA;  /* Blue */
+    background-color: #5995DA;
 
   }
