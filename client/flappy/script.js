@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         bird.style.bottom = birdBottom + 'px'
         bird.style.left = birdLeft + 'px'
     }
+    
     let gameTimerId = setInterval(startGame, 20)
 
     function control(e) {
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         bird.style.bottom = birdBottom + 'px'
         console.log(birdBottom)
     }
+
     document.addEventListener('keyup', control)
 
 
@@ -58,6 +60,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                 gameDisplay.removeChild(obstacle)
                 gameDisplay.removeChild(topObstacle)
             }
+
             if (
                 obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 &&
                 (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap -200)||
@@ -67,6 +70,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                 clearInterval(timerId)
             }
         }
+
         let timerId = setInterval(moveObstacle, 20) 
         if (!isGameOver) setTimeout(generateObstacle, 3000)
 
@@ -81,7 +85,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         document.removeEventListener('keyup', control)
         ground.classList.add('ground')
         ground.classList.remove('ground-moving')
-    }
+        }
 
 
 })
