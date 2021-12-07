@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Suhail HTML Forms, HTTP Methods, REST APIs</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="columns is-mobile">
+                    <div class="column subtitle is-11"><h1>Suhail's Lab 5</h1></div>
+                </div>
+
+                <div class="columns is-mobile">
+                    <div class="column is-3">
+                        <form action="/api" method="get">
+                            <div class="info">
+                              <label for="first-name">First Name</label>
+                              <input id="first-name" name="first-name" type="text" />
+                              <label for="food-preference">Food Preference</label>
+                              <input id="food-preference" name="food-preference" type="text" />
+      
+                              <fieldset class='radio-buttons'>
+                                  <legend>Veggie or Vegan?</legend>
+      
+                                  <input id='yes-veggie'
+                                      name='question'
+                                      type='radio'
+                                      value='yes' />
+                                  <label for='yes-veggie' class='radio-label'>Yes</label>
+      
+                                  <input id='no-vegan'
+                                      name='question'
+                                      type='radio'
+                                      value='no'/>
+                                  <label for='no-vegan' class='radio-label'>No</label>
+                              </fieldset>
+      
+                              <div class="button-container">
+                                <button class="button is-mobile is-primary">Submit</button>       
+                              </div>
+
+                            </div>
+                            
+                          </form>
+                    </div>
+                    <div class="column is-5">
+                        Placeholder text Placeholder Placeholder
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
